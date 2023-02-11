@@ -1,0 +1,83 @@
+#background {
+    height: 725px;
+    background-color: rgb(106, 146, 84);
+}
+
+#hero-box img{
+width: 100%;
+}
+body {
+    background-color: #fcfbfb; 
+}
+header {
+    background-color:rgba(20,30,13, .7);
+}
+nav a:hover {
+    background-color: black;
+}
+div {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav a:hover {
+    background-color: black;
+    color: #d9c2a3;
+}
+
+.icon {
+    width: 80px;
+}
+     
+ 
+nav a {
+    text-align: center;
+    color: #fcfbfb;
+    text-decoration: none;
+    color: rgba(1, 9, 16, 0.882);
+}    
+
+footer {
+    font-size: 1.2em;
+    background-color: rgba(41, 104, 5, 0.525);
+} 
+
+footer p a:hover {
+    text-decoration: underline;
+    background-color: rgba(41, 104, 5, 0.525);
+}    
+
+#hero-msg h1 {
+    text-align: center;
+}
+
+#hero-msg h4 {
+    text-align: center;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section{
+    text-align: center;
+}
+
+.social {
+    background-color: rgba(41, 104, 5, 0.525);
+}
+
+footer {
+    background-color: rgba(41, 104, 5, 0.525);
+}
+
+/* .msg h2{
+    background-color: rgb(236, 15, 15);
+}
+.msg p{
+    background-color: rgb(236, 15, 15);
+} */
+
+.msg{
+    background-color: rgba(41, 104, 5, 0.525);
+}
