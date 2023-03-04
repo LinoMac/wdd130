@@ -25,3 +25,46 @@ Fonts are separated by a & */
   --nav-hover-link-color: rgb(132, 135, 127);
   --nav-hover-background-color: #59768b;
 }
+
+nav{
+    background-color: #70ae44;
+}
+
+nav > ul  > li{
+    list-style-type: none;
+    text-align: center;
+    color:#b7c9ce;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-between
+}
+
+.menu_buttons{
+    position: relative;
+    top:80px;
+    right:40px;
+    
+
+}
+.menu_buttons > a{
+    border:  3px solid rgb(66, 88, 52);
+    padding:12px
+
+}
+
+.menu_buttons > a:hover{
+    background-color: #697058;
+    text-decoration: underline;
+    color:white;
+
+}
+
+.logo{
+    width:85%;
+    padding:5px;
+}
+
