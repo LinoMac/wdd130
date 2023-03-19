@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  .block {
+    width: 33.33%;
+    border: 2px solid black;
+  }
+  .block1 {
+    text-align: left;
+    border: 2px solid black;
+  }
+  .block2 {
+    text-align: center;
+    border: 2px solid black;
+  }
+  .block3 {
+    text-align: right;
+    border: 2px solid black;
+  }
+  .block4 {
+    text-align: center;
+    border: 2px solid black;
+  }
+  .block p:nth-child(1) {
+    text-align: left;
+  }
+  .block p:nth-child(2) {
+    text-align: center;
+  }
+  .block p:nth-child(3) {
+    text-align: right;
+  }
+  .block4 p:nth-child(1) {
+    text-align: right;
+  }
+  .block4 p:nth-child(2) {
+    text-align:center ;
+  }
+  .block4 p:nth-child(3), .block4 p:nth-child(4) {
+      text-align:left ;
+  }

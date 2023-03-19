@@ -94,9 +94,15 @@ footer p a:hover {
 
 .container {
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px; 
   }
-  .image {
+  .contact_us {
     width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
   }
   .description {
     position: absolute;
@@ -106,4 +112,8 @@ footer p a:hover {
     color: white;
     font-size: 24px;
     text-shadow: 1px 1px black
+}
+#content {
+  max-width: 1700px;
+  margin: 0 auto;
 }
