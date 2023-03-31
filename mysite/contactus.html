@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="contactus.css">
 </head>
 <body>
-     <div id="content">
-        <header>
-            <header> 
+     <header id="header_container">
+        <div class="overlay">
                 <nav>
                     <ul>
                         <li> 
@@ -22,30 +21,44 @@
                         <li class="menu_buttons"> <a href="./crops.html">   Crops</a></li>
                         <li class="menu_buttons"> <a href="./new_site_plan.html"> Site Plan</a></li>
                         <li class="menu_buttons"> <a href="./contactus.html"> Contact Us</a></li>
-                    </ul>
-                    
-                </nav>
-            </header>
+                    </ul>      
+                </nav>          
         </div>
+    </header>
+            </header>
+ <main class="contact_page">   
+     <h1>
+         Contact Us 
+     </h1>       
             <div class="container">
-                <div class="contact_us">
-                  <img src="./images/about us.jpg" alt="Image">
+                <!-- <div class="contact_us">
+                  <img src="./images/about us.jpg" alt="Image"> -->
                 </div>
                 <div class="description">
-                  <p>This is a description of the image.</p>
-                </div>
-
-                <div class="form">
-                    <input type="text" placeholder="Enter your name">
-                </div>
-                <div class="form">
-                    <input type="email" placeholder="Enter your email">
-                </div>
-                <div class="form"> 
-                    <button>Sign Up</button>
+                  <!-- <p>This is a description of the image.</p> -->
                 </div>
               </div>
-            
+              <form action="/my-handling-form-page" method="post">
+              <ul>
+                <li>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="user_name" />
+                </li>
+                <li>
+                  <label for="mail">Email:</label>
+                  <input type="email" id="mail" name="user_email" />
+                </li>
+                <li>
+                  <label for="msg">Message:</label>
+                  <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li>
+                    <input type="submit" value="send">
+                </li>
+              </ul>
+            </form>   
+            <iframe class="map" width="60%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=johannesburg%20the%20hill%20+(Linomap)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/sport-gps/">hiking gps</a></iframe>    
+    </main>      
     <!-- <p>
         Our obejctive is to offer guidance to local farmers that want to improve yeilds and manage crop storage. We have trained crop consultants that will come and visit your farm to and offer consultations based on the need of your farm's needs.
     </p> -->
@@ -68,4 +81,22 @@
 
     </div>    
 </body>
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        feedbackElement.style.backgroundColor = "#999";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
 </html>         

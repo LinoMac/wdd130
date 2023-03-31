@@ -26,11 +26,23 @@ Fonts are separated by a & */
   --nav-hover-background-color: #59768b;
 }
 
-nav{
-    background-color: #70ae44;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-nav > ul  > li{
+p,h1,h2,h3,a{
+    font-family:"Sofia Sans Semi Condensed";
+}
+
+nav a{
+   color: white;
+   text-decoration: none;
+   font-family: "Sofia Sans Semi Condensed" ;
+}
+
+nav  ul   li{
     list-style-type: none;
     text-align: center;
     color:#b7c9ce;
@@ -38,7 +50,7 @@ nav > ul  > li{
     font-weight: bold;
 }
 
-nav > ul {
+nav  ul {
     display: flex;
     justify-content: space-between
 }
@@ -51,7 +63,6 @@ nav > ul {
 
 }
 .menu_buttons > a{
-    border:  3px solid rgb(66, 88, 52);
     padding:12px
 
 }
@@ -66,11 +77,12 @@ nav > ul {
 .logo{
     width:85%;
     padding:5px;
+    border-radius: 100px;
 }
 
 footer {
     background-color: rgba(41, 104, 5, 0.525);
-    margin-top: 200px;
+    margin-top: 10px;
     padding: 25px 50px;
     display: flex;
     justify-content: space-around;
@@ -95,3 +107,66 @@ footer p a:hover {
 .description {
     flex: 1;
   }
+
+  /* hero */
+.overlay{
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.overlay div{
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+#header_container{
+    background: url("./images/afritrac.jpg");
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+#header_container h1{
+    margin-top: 5.5%;
+    color: white;
+}
+
+#header_container h2{
+    margin-top: 1%;
+    color: white;
+    text-align:justify;
+}
+
+    /* main */
+
+.sustain_container{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+h3{
+    margin-bottom: 3%;
+    margin-top: 1%;
+}
+
+.sustain_container p{
+font-size: 18px;
+}
+
+/* woman */
+
+#woman_empowerment{
+    background: url("./images/taat_ethiopia_wheat_orange_shawl_farmer_low.webp");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    }
+
+

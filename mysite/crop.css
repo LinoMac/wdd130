@@ -26,51 +26,53 @@ Fonts are separated by a & */
   --nav-hover-background-color: #59768b;
 }
 
-nav{
-    background-color: #70ae44;
+nav a{
+  color: white;
+  text-decoration: none;
+  font-family: "Sofia Sans Semi Condensed" ;
 }
 
-nav > ul  > li{
-    list-style-type: none;
-    text-align: center;
-    color:#b7c9ce;
-    font-size: 24px;
-    font-weight: bold;
+nav  ul   li{
+   list-style-type: none;
+   text-align: center;
+   color:#b7c9ce;
+   font-size: 24px;
+   font-weight: bold;
 }
 
-nav > ul {
-    display: flex;
-    justify-content: space-between
+nav  ul {
+   display: flex;
+   justify-content: space-between
 }
 
 .menu_buttons{
-    position: relative;
-    top:80px;
-    right:40px;
-    
+   position: relative;
+   top:80px;
+   right:40px;
+   
 
 }
 .menu_buttons > a{
-    border:  3px solid rgb(66, 88, 52);
-    padding:12px
+   padding:12px
 
 }
 
 .menu_buttons > a:hover{
-    background-color: #697058;
-    text-decoration: underline;
-    color:white;
+   background-color: #697058;
+   text-decoration: underline;
+   color:white;
 
 }
 
 .logo{
     width:85%;
     padding:5px;
+    border-radius: 100%;
 }
 
 footer {
     background-color: rgba(41, 104, 5, 0.525);
-    margin-top: 200px;
+    margin-top: 50px;
     padding: 25px 50px;
     display: flex;
     justify-content: space-around;
@@ -90,6 +92,7 @@ footer p a:hover {
 
 }
 .image_1 img{
+  margin-top: 5%;
   width: 100%;
   width: 100%;
   grid-column: 2/7;
@@ -109,6 +112,7 @@ footer p a:hover {
 }
 
 .image_2 img{
+  margin-top: 5%;
   width: 100%;
   grid-column: 2/7;
   grid-row: 5/8;
@@ -126,6 +130,7 @@ footer p a:hover {
 }
 
 .image_3 img{
+  margin-top: 5%;
   width: 100%;
   width: 100%;
   grid-column: 2/7;
@@ -139,4 +144,27 @@ footer p a:hover {
 
 main{
   padding: 0 50px;
+}
+
+/* overlay */
+.overlay{
+  background-color: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.overlay div{
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+#header_container{
+  background: url("./images/cottooonn.jpeg");
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;    
 }
