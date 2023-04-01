@@ -5,13 +5,13 @@
     src: local('Squad Regular'), url('SquadRegular.woff') format('woff');
 }
 body{
-    background-color: #333;
+    background-color: rgb(242, 214, 150);
 }
 #grid-container{
     display: inline-block;
     position: relative;
     margin: 150px auto;
-    background-color: white;
+    background-color: rgb(241, 238, 221);
     width: 800px;
     height: 500px;
     display: grid;
@@ -36,6 +36,7 @@ h3{
 #form{
     grid-column: 2;
     color: #555;
+    margin-left: 10%;
 }
 #sub{
     background-color: #E39968;
@@ -53,7 +54,7 @@ h3{
 } 
 section{
     font-family: 'Squad Regular';
-    background-color: white;  
+    background-color: rgb(244, 229, 214);  
     padding:auto;
     overflow: hidden;  
 }
