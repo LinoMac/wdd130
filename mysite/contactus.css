@@ -65,51 +65,6 @@ nav  ul {
   }
 
 
-/* nav{
-    background-color: #70ae44;
-}
-main.contact_page {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-}
-main.contact_page form {
-  margin-left:-150px;
-  background-color:#FFFFFF9E;
-}
-
-nav > ul  > li{
-    list-style-type: none;
-    text-align: center;
-    color:#b7c9ce;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-nav > ul {
-    display: flex;
-    justify-content: space-between
-}
-
-.menu_buttons{
-    position: relative;
-    top:80px;
-    right:40px;
-    
-
-}
-.menu_buttons > a{
-    border:  3px solid rgb(66, 88, 52);
-    padding:12px
-
-}
-
-.menu_buttons > a:hover{
-    background-color: #697058;
-    text-decoration: underline;
-    color:white;
-
-} */
-
 .logo{
     width:85%;
     padding:5px;
@@ -175,8 +130,9 @@ form {
   width: 400px;
   /* Form outline */
   padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 1em;
+
+  /* border-radius: 1em; */
+  background-color: #a59277b9;
 }
 
 ul {
@@ -193,7 +149,8 @@ label {
   /* Uniform size & alignment */
   display: inline-block;
   width: 90px;
-  text-align: right;
+  color: white;
+  margin-bottom: 10px;
 }
 
 input,
@@ -201,25 +158,24 @@ textarea {
   /* To make sure that all text fields have the same font settings
      By default, textareas have a monospace font */
   font: 1em sans-serif;
-
   /* Uniform text field size */
   width: 300px;
   box-sizing: border-box;
+  border-radius: 10px;
 
   /* Match form field borders */
-  border: 1px solid #999;
+  
 }
 
 input:focus,
 textarea:focus {
   /* Additional highlight for focused elements */
-  border-color: #000;
+  border-color: rgb(60, 210, 255);
 }
 
 textarea {
   /* Align multiline text fields with their labels */
-  vertical-align: top;
-
+  border-radius:0px;
   /* Provide space to type some text */
   height: 5em;
 }
@@ -270,3 +226,30 @@ button {
   margin: auto;
   margin-top: 50px;
 }
+
+/* contact box */
+
+.info_container{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  /* background: url(./images/cotton.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  */
+}
+.left_box{
+  width: 100%;
+  background-color: #609187;
+   background: url(./images/cottooonn.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+
+h1 {
+  text-align: center;
+  margin-left: 2%;
+}
+
