@@ -132,7 +132,7 @@ form {
   padding: 1em;
 
   /* border-radius: 1em; */
-  background-color: #a59277b9;
+  background-color: rgba(53, 89, 59, 0.551);
 }
 
 ul {
@@ -224,7 +224,7 @@ button {
 .map{
   display: block;
   margin: auto;
-  margin-top: 50px;
+  margin-left: 150px;
 }
 
 /* contact box */
@@ -241,7 +241,7 @@ button {
 .left_box{
   width: 100%;
   background-color: #609187;
-   background: url(./images/cottooonn.jpeg);
+   background: url(./images/afriafri.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; 
@@ -253,3 +253,32 @@ h1 {
   margin-left: 2%;
 }
 
+.maps_section{
+  background: url("./images/afrifarms.jpg");
+  /* height: 200px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+  background-color: #96ceb4;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin-top: 20px;
+  
+}
+
+.contact_me{
+  padding-top: 80px;
+  /* background-color: #96ceb4; */
+  text-align: center;
+  margin-right: 10px;
+  color: white;
+  
+}
+
+.contact_me > ul >li{
+  font-size: 25px;
+  line-height: 35px;
+}
+.maps_section > section > h3{
+  font-size: 35px;
+}
